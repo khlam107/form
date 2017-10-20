@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+   <title>正官庄香港官方網站 - 健康新概念．正官庄</title>
+   <meta charset="utf-8"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+   <link rel="stylesheet" href="bootstrap.min.css"/>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+   <script src="bootstrap.min.js"></script>
+   <script src="jquery-1.9.1.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header">
+           <div class="row">
+           <div class="col-md-2">
+               <img class="img-responsive" src="images/logo.jpg">
+           </div>           
+           </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <img class="img-responsive" src="images/hero-banner.jpg">
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <p></p>
+        <h4>
+          亲，正官庄欢迎你来到香港旅游，为庆贺十一黄金周这个盛大节日，现亲临正官庄以下三间分店凭优惠券即可免费领取迎新禮品包(红润年轻的野樱莓汁乙包)，名额有限，送完即止。
+        </h4>
+        <h4>
+          还有还有！千万不要错过<font color="red"><strong>风靡全个韩国</strong></font>兼<font color="red"><strong>李栋旭OPPA推介</strong></font>的<font color="red"><strong>绝无咖啡因提神健康饮品EVERYTIME</strong></font>，EVERYTIME礼盒装（30包）黄金周优惠价港币690元正（<font color="red"><strong>买三送一</strong></font>，平均每盒价），喝完EVERYTIME与OPPA一样可以限时瞬间复活。紧记关注我们正官庄的账号了解更多OPPA推荐的产品喔！
+        </h4>
+        <h4>
+          立马登记，即可领取迎新礼品及专享黄金优惠价购买EVERYTIME礼盒装，与李栋旭OPPＡ一样体验EVERYTIME的威力吧！
+        </h4>
+        <h4>
+          <strong><u>完成登记后，请到已登記的电邮地址查收优惠码，然后到选定分店出示优惠码领取礼品及尊享黄金优惠价～</u></strong>
+        </h4>
+        <h4>
+          优惠期有限，名额先到先得喔！
+        </h4>
+        <p></p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h4>
+                    <strong>适用分店地址:</strong>
+                    <p></p>
+                    <ol>
+                        <li>九龙区</li>
+                        <li>新界区</li>
+                        <li>香港区</li>
+                    </ol>
+                    <p></p>
+                    <p></p>
+                    <strong>细则:</strong>
+                    <p></p>
+                    <ul>
+                        <li>所有图片只供参考</li>
+                        <li>每个账号只能换取赠品一次，赠品不能兑换现金或其他优惠</li>
+                        <li>必须出示优惠编码领取礼品</li>
+                        <li>所有赠品优惠名额有限，送完即止</li>
+                        <li>优惠期由2017年9月29日至2017年10月8日</li>
+                        <li>如有任何争议，保留最终决定权</li>
+                    </ul>
+                </h4>
+            </div>
+            <div class="col-md-4">
+                <img class="img-responsive" src="images/qr-code.jpg" />
+            </div>
+        </div>
+        <p></p>
+    </div>
+	
+	<div class="container">
+		<h4><font color="red"><strong>
+		<ul>
+			<% for(var i=0; i<msg.length; i++) {%>  
+				<li><%= msg[i] %></li>  
+			<% } %>
+		</ul>
+		</h4></font></strong>
+		<h4><font color="green"><strong>
+			<% for(var i=0; i<thx.length; i++) {%>  
+				<li><%= thx[i] %></li>  
+			<% } %>
+		</h4></font></strong>
+	</div>
+	
+	<div class="container">
+		<form action="http://localhost:3000/index" method="get">
+			<div class="row">
+				<div class="col-md-4">
+					<input type="text" name="wechat" placeholder="微信账号" class="form-control input-lg">
+				</div>
+				<div class="col-md-4">
+					<input type="text" name="email" placeholder="电邮地址" class="form-control input-lg">
+				</div>
+				<div class="col-md-4">
+					<select name="location" class="form-control input-lg">
+						<option value="">请选择以下分店</option>
+						<option value="hk">香港区</option>
+						<option value="kln">九龙区</option>
+						<option value="nt">新界区</option>
+					</select>
+				</div>
+			</div>
+			<p></p>
+			<div class="row">
+				<div class="col-md-6">
+					<input type="checkbox" name="agree" value="">
+					<label>
+						<h4>我同意上述的条款及细则</h4>
+					</label>
+				</div>
+				<div class="col-md-6">
+					<button class="btn btn-danger btn-block btn-lg">注册</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+    <div class="container">
+        <img class="img-responsive" src="images/product-shot.jpg" />
+    </div>
+
+    <div class="container">
+        <img class="img-responsive" src="images/foot-banner.png" />
+    </div>
+
+    <div class="container">
+        <p></p>
+        <p class="text-right">Copyright © 韩国高丽参(中国)有限公司. All rights reserved.</p>
+    </div>
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59bf97fa5872c204"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+/*---------- ---------- ---------- CSS Reset ---------- ---------- ----------*/
+html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, fieldset, input { margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6, pre, code, address, caption, cite, code, th { font-style: normal; font-weight: normal; }
+ul, ol { list-style: none; }
+fieldset, img { border: none; }
+caption, th { text-align: left; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+
+/*---------- ---------- ---------- Common Style ---------- ---------- ----------*/
+html, body {position: relative; width: 100%; font-family: "Reader-Bold", "Microsoft Yahei", "微软雅黑", "STXihei", "华文细黑", sans-serif; font-size: 16px;}
+.wrap {position: relative; width: 90%; max-width: 1100px; margin: 0 auto;}
+img {max-width: 100%;}
+.alert {margin: 10px 0; display: none;}
+.alert .reason {display: none;}
+.bold {font-weight: bold;}
+.red {color: #ff0000;}
+.large {font-size: 1.2em;}
+.underline {text-decoration: underline;}
+
+.header {position: relative; margin: 15px 0 20px 0; padding: 0 0 15px 0; border-bottom: 1px solid #cfcfcf; -webkit-box-shadow: 0 6px 5px -4px #cfcfcf; -moz-box-shadow: 0 6px 5px -4px #cfcfcf; box-shadow: 0 6px 5px -4px #cfcfcf;}
+.header .logo {position: relative; width: 130px;}
+.main-content {position: relative;}
+.main-content .promo-desc {position: relative; margin: 15px 0 0 0;}
+.main-content .promo-desc p {margin: 10px 0;}
+.main-content .float-container {position: relative; width: 100%;}
+.main-content .float-container:after {content: ''; clear: both; display: block;}
+.main-content .float-container .left, .main-content .float-container .right {position: relative; float: left;}
+.main-content .float-container .left {width: 70%;}
+.main-content .float-container .right {width: 30%;}
+.main-content .float-container .left .store-location {position: relative; margin: 30px 0;}
+.main-content .float-container .left .store-location li {list-style: decimal; margin-left: 21px;}
+.main-content .float-container .left .tnc {position: relative; margin: 30px 0;}
+.main-content .footer {position: relative; margin: 20px 0; text-align: right; font-size: 14px;}
+
+.main-content .form-element {position: relative; width: 100%; margin: 15px 0 10px 0;}
+.main-content .form-element:after {content: ''; clear: both; display: block;}
+.main-content .form-element .size-control {position: relative; float: left; width: 31%; margin: 0 2% 0 0;}
+.main-content .form-element .size-control .form-control { font-size: 14px; position: relative; width: 100%; border: #000 solid 1px; box-shadow: none; border-radius: 0; padding: 16px; height: auto; }
+.main-content .form-element .size-control .select-box select{ font-size: 14px; background: #fff; border-radius: 0; border: none; height: auto; width: 100%; -moz-appearance: none; -webkit-appearance: none; appearance: none; padding: 16px; border: #000 solid 1px; color: #999;}
+.main-content .form-element .size-control .select-box:after { content: ""; display: inline-block; background: url("../images/drop-arrow.png") center center no-repeat, transparent; position: absolute; pointer-events: none; right: 15px; top: 50%; height: 8px; width: 13px; margin-top: -4px;}
+.main-content .form-footer {margin: 0 0 20px 0; width: 97%;}
+.main-content .form-footer:after {content: ''; clear: both; display: block;}
+.main-content .form-footer .agree-box {float: left;}
+.main-content .form-footer .submit-btn {position: relative; background: #d1102f; color: #fff; float: right; width: 40%; padding: 13px 0; text-align: center; -webkit-appearance: button; cursor: pointer; border: none; font-size: 18px;}
+
+.atss-right .at-share-close-control .at4-arrow {display: none !important;}
+.addthis-smartlayers #at4-share, .addthis-smartlayers #at4-soc {top: 90% !important;}
+
+@media handheld, only screen and (max-width: 1000px) {
+  .wrap {width: 97%;}
+  .main-content .float-container .left .store-location {margin: 15px 0;}
+  .main-content .float-container .left .tnc {margin: 15px 0;}
+  .main-content .footer {margin: 12px 0 70px 0;}
+}
+
+@media handheld, only screen and (max-width: 640px) {
+  .header .logo {width: 80px;}
+  .main-content .float-container .left, .main-content .float-container .right {float: none;}
+  .main-content .float-container .left {width: 100%;}
+  .main-content .float-container .right {width: 70%; margin: 15px 0; float: right;}
+  .main-content .form-element {margin: 15px 0;}
+  .main-content .form-element .size-control {float: none; margin: 10px 0; width: 100%;}
+  .main-content .form-footer {width: 100%;}
+  .main-content .form-footer .agree-box {float: none;}
+  .main-content .form-footer .submit-btn {float: none; width: 100%; margin: 10px 0 0 0; font-size: 16px; padding: 10px 0;}
+  
+}
